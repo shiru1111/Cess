@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
     <style>
@@ -16,7 +16,6 @@
             align-items: center;
             min-height: 100vh;
             position: relative;
-            overflow: hidden;
         }
 
         body::before {
@@ -45,6 +44,19 @@
         h1 {
             font-size: 1.5em;
             margin-top: 10px;
+            animation: moveUp 1.5s ease-in-out;
+        }
+
+        @keyframes moveUp {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         main {
@@ -187,7 +199,7 @@
 
 <body>
     <header>
-        <h1 style="animation: moveUp 1.5s ease-in-out;">Welcome cess!</h1>
+        <h1>Welcome cess!</h1>
     </header>
 
     <main>
